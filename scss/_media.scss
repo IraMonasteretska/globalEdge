@@ -1,0 +1,717 @@
+@media screen and (max-width: 1440px) {
+	.future-content {
+		padding-top: 90px;
+	}
+	.future-left {
+		margin-top: 0;
+	}
+	.faq {
+		&-content {
+			flex-wrap: wrap;
+			padding-left: 15%;
+			padding-right: 15%;
+			&__item {
+				margin-bottom: 40px;
+			}
+		}
+	}
+	.footer {
+		&__btn {
+			left: 15px;
+		}
+		&__arrow {
+			right: 15px;
+		}
+	}
+}
+
+@media screen and (max-width: 1140px) {
+	.header {
+		&__menu {
+			position: absolute;
+			display: block;
+			height: 100vh;
+			max-width: 100%;
+			padding-top: 165px;
+			background: #2C2C95 url('../img/svg/logo-mobile.svg') no-repeat center 50px;
+			text-align: center;
+			left: 0;
+			top: 0;
+			margin-right: 0;
+			z-index: 10;
+			transform: translateY(-100%);
+			transition: transform 0.3s ease;
+			.menu-item {
+				&:last-child a {
+					color: #ff8000;
+				}
+			}
+			.menu-item a {
+				color: #fff;
+				width: max-content;
+				margin: 0 auto;
+				margin-bottom: 30px;
+			}
+		}
+		&__btn {
+			margin-left: auto;
+			margin-right: 40px;
+			opacity: 1;
+			transition: opacity 0.3s ease;
+			&.active {
+				position: absolute;
+				display: flex;
+				margin-right: 0;
+				left: 50%;
+				top: 490px;
+				transform: translateX(-50%);
+				border: 1px solid #fff;
+				color: #fff;
+				z-index: 15;
+				animation-delay: 0.3s;
+				transition: animation 0.3s ease;
+				svg path {
+					stroke: #fff;
+				}
+			}
+		}
+	}
+	.header__menu.nav-active {
+		transform: translateY(0);		
+		transition: transform 0.3s ease;		
+	}
+	.menu-burger {
+		display: block;
+		z-index: 15;
+		&.active {
+			position: absolute;
+			top: 40px;
+			right: 20px;
+		}
+	}
+	.first-content {
+		display: block;
+	}
+
+	.first {
+		padding-top: 50px;
+		&__title {
+			width: 100%;
+			margin:  0 auto;
+			padding: 0 50px;
+			text-align: center;
+			margin-bottom: 30px;	
+		}
+		&__text {
+			margin: 0 auto;
+			padding: 0;
+			max-width: 800px;
+		}
+	}
+
+	.simplicity-item {
+		width: 33%;
+  	}
+  	.offer-content {
+		max-width: 52%;
+		padding-top: 50px;
+		padding-left: 70px;
+	}
+  	.offer-picture {
+		max-width: 45%;
+	}
+
+  	.tech {
+    	&__background {
+      		height: 500px;
+    	}
+
+		&__first-block {
+			margin-top: 50px;
+		}
+
+		&__first-block-title {
+			font-size: 44px;
+		}
+
+		&__first-block-title--blue {
+			font-size: 44px;
+		}
+
+		&__first-block-right-text {
+			line-height: 170%;
+			font-size: 16px;
+		}
+
+		&__first-block--rotate {
+			left: -60px;
+			top: 115px;
+		}
+		&__flex-container {
+			margin-top: 40px;
+		}
+
+		&__box {
+			width: 48%;
+			margin-top: 30px;
+		}
+
+		&__box-img {
+			width: 250px;
+		}
+
+		&__box-title {
+			font-size: 20px;
+			line-height: 150%;
+		}
+
+		&__box-title-blue {
+			font-size: 20px;
+			line-height: 150%;
+		}
+
+		&__box-title-text {
+			font-size: 16px;
+			line-height: 155%;
+		}
+
+		&__new-way {
+			margin-top: 60px;
+		}
+
+		&__first-block-title--les {
+			font-size: 30px;
+			line-height: 125%;
+		}
+
+		&__first-block-title--less-blue {
+			font-size: 30px;
+		}
+
+		&__first-block-right-text {
+			font-size: 16px;
+			line-height: 150%;
+		}
+
+		&__right--bot {
+			width: 50%;
+		}
+
+		&__right--bot-title {
+			font-size: 17px;
+			line-height: 150%;
+			margin-top: 50px;
+			margin-bottom: 40px;
+		}
+
+		&__text--punct {
+			font-size: 17px;
+			width: 100%;
+			margin: 25px auto;
+			transform: translateX(20px);
+			&:before {
+				left: -24px;
+			}
+		}
+
+		&__text-bottom-block {
+			width: 100%;
+			font-size: 17px;
+			line-height: 150%;
+			margin-top: 70px;
+		}
+  	}
+ 	.benefits__first-block {
+   	 	margin-top: 0;
+		.tech__first-block--rotate {
+			top: 145px;
+		}
+  	}
+
+ 	.benefits {
+		&__bottom-left {
+			width: 75%;
+		}
+
+		&__bottom-right {
+			width: 25%;
+		}
+
+		&__about-text {
+			margin-left: 70px;
+			line-height: 150%;
+			padding-right: 35px;
+			font-size: 17px;
+		}
+
+		&__botoom-ava {
+			max-width: 180px;
+			width: 100%;
+			margin-top: 100px;
+		}
+  	}
+
+  	.benefits__bottom-block {
+		.tech {
+			&__first-block-title {
+				font-size: 35px;
+				margin-left: 70px;
+			}
+
+			&__first-block-title--blue {
+				font-size: 35px;
+			}
+		}
+	}
+
+	.tech__background-benefits{
+		height: auto;
+		padding-bottom: 30px;
+	}
+	.faq {
+		&-content {
+			padding-left: 10%;
+			padding-right: 10%;
+		}
+	}
+	.literature-right {
+		max-width: 100%;
+	}
+	.literature-left {
+		max-width: 420px;
+		padding-left: 70px;
+	}
+}
+
+@media screen and (max-width: 992px) {
+	.container {
+		max-width: 740px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.first {
+		&__text {
+			padding-left: 20px;
+			padding-right: 20px;
+    }
+		&__scroll {
+			top: 70px;
+		}
+	}
+	.future {
+		padding-bottom: 80px;
+		&-content {
+			padding-left: 0;
+		}
+	}
+	.future-block {
+		display: block;
+		padding-bottom: 80px;
+	}
+	.future-left {
+		max-width: 670px;
+		margin-left: auto;
+		margin-right: auto;
+		&__text {
+			padding-left: 0;
+		}
+	}
+	.future-content {
+		max-width: 100%;
+		&__title {
+			text-align: center;
+			font-size: 36px;
+		}
+		&__bottom {
+			text-align: center;
+		}
+	}
+	.simplicity {
+		padding-top: 0;
+		display: block;
+		&-item {
+			margin-bottom: 40px;
+			width: 100%;
+			&__title {
+				max-width: 100%;
+			}
+		}
+	  }
+	  .offer {
+		  &-container {
+			  display: block;
+		  }
+		  &-content {
+			  padding-top: 0;
+			  max-width: 100%;
+			  padding-left: 0;
+			  &__img {
+				  margin-bottom: 30px;
+			  }
+		  }
+		  &__title {
+			  text-align: center;
+		  }
+		  &-picture {
+			  max-width: 100%;
+		  }
+		  &__scroll {
+			top: -50px;
+			left: -70px;
+		  }
+	}
+	.faq {
+		&-content {
+			&__item {
+				margin-left: auto;
+				margin-right: auto;
+			}
+		}
+	}
+	.literature-container {
+		display: block;
+	}
+	.literature-left {
+		max-width: 100%;
+		margin-bottom: 40px;
+		padding-left: 0;
+	}
+	.literature {
+		&__title {
+			text-align: center;
+			margin-bottom: 40px;
+		}
+		&__link {
+			justify-content: center;
+		}
+		&-right {
+			padding: 0 10px;
+		}
+	}
+	.contact {
+		display: block;
+		&-social {
+			&__item {
+				margin-left: 0;
+				margin-right: 20px;
+			}
+		}
+		&__text {
+			margin-top: 5px;
+			margin-bottom: 5px;
+		}
+		&__link {
+			margin-top: 5px;
+			margin-bottom: 5px;
+		}
+	}
+	.footer {
+		padding-top: 60px;
+		padding-bottom: 60px;
+		&-container {
+			display: block;
+		}
+	}
+	.contact {
+		display: flex;
+	}
+}
+
+
+@media (max-width: 918px) {
+
+	.benefits__botoom-ava {
+		max-width: 140px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.header__btn {
+		display: none;
+	}
+	.first__title {
+		font-size: calc(46px + (16 + 16 * 0.7)  * ((100vw - 320px) / 1920));
+		padding-left: 0;
+		padding-right: 0;
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 350px;
+	}
+	.footer-container {
+		display: block;
+	}
+	.footer-menu {
+		margin-bottom: 10px;
+	}
+}
+
+@media (max-width: 718px) {
+  	.tech {
+    	&__first-block {
+      		margin-top: 50px;
+      		display: block;
+    	}
+
+		&__first-block-title {
+			font-size: 39px;
+			text-align: center;
+		}
+
+		&__first-block-title--blue {
+			font-size: 39px;
+			display: inline;
+		}
+
+		&__first-block-right-text {
+			line-height: 150%;
+			margin: 0 auto;
+		}
+
+		&__first-block--rotate {
+			display: none;
+		}
+
+		&__first-block-left,
+		&__first-block-right {
+			width: 100%;
+			padding: 0;
+		}
+
+		&__first-block--rotate {
+			left: -60px;
+			top: 115px;
+		}
+		&__flex-container {
+			margin-top: 20px;
+			display: block;
+		}
+
+		&__box {
+			width: 90%;
+			margin-top: 30px;
+		}
+
+		&__new-way {
+			margin-top: 50px;
+			display: block;
+		}
+
+		&__first-block-title--les {
+			text-align: center;
+		}
+
+		&__right--bot {
+			width: 80%;
+			padding-left: 20px;
+			padding-right: 20px;
+			margin: 0 auto;
+			height: auto;
+			padding-bottom: 40px;
+		}
+
+		&__right--bot-title {
+			padding-top: 30px;
+			margin-bottom: 30px;
+		}
+
+		&__text--punct {
+			width: 100%;
+			transform: translateX(0px);
+			padding: 0;
+			margin-left: 20px;
+			&:before {
+				left: -17px;
+			}
+		}
+
+		&__text-bottom-block {
+			margin-top: 50px;
+			padding: 0;
+		}
+	}
+
+  	.benefits__first-block {
+		.tech__first-block-right-text {
+			margin-bottom: 20px;
+		}
+  	}
+
+  	.benefits {
+		&__block {
+			padding: 10px;
+		}
+
+		&__number {
+			font-size: 20px;
+			margin-bottom: 30px;
+		}
+
+		&__item-title {
+			font-size: 20px;
+			margin-bottom: 30px;
+		}
+
+		&__item-img {
+			width: 35px;
+			margin-right: 15px;
+		}
+
+		&__item-text {
+			font-size: 16px;
+			line-height: 160%;
+		}
+	}
+
+  	.benefits {
+		&__bottom-left {
+			width: 100%;
+		}
+
+		&__bottom-right {
+			width: 100%;
+			display: flex;
+			justify-content: center;
+		}
+
+		&__about-text {
+			margin-left: 0px;
+			padding-right: 0px;
+			font-size: 16px;
+		}
+
+		&__botoom-ava {
+			max-width: 200px;
+			width: 100%;
+			margin-top: 20px;
+		}
+	
+		&__typing{		
+			span{  
+				font-size: 20px;
+			}
+		}
+	
+		&__typing-span{
+			font-size: 20px;
+		}
+	}
+
+  	.benefits__bottom-block {
+    	display: block;
+		.tech {
+			&__first-block-title {
+				font-size: 30px;
+				margin-left: 0px;
+			}
+
+			&__first-block-title--blue {
+				font-size: 30px;
+			}
+		}
+	}
+	
+
+}
+
+@media screen and (max-width: 576px) {
+	.section__title {
+		font-size: 36px;
+	}
+	.scroll {
+		display: none;
+	}
+	.menu-burger {
+		display: block;
+		z-index: 15;
+		width: 30px;
+		height: 16px;
+		
+		&.active {
+			position: absolute;
+			top: 38px;
+			right: 20px;
+			width: 22px;
+			height: 22px;
+		}
+	}
+	.header {
+		&__logo {
+			width: 60%;
+		}
+	}
+	.header__btn {
+		height: 48px;
+		width: 200px;
+		font-size: 14px;
+		line-height: 17px;
+		padding: 0; 
+	}
+	
+	.first {
+		&__text {
+			padding-left: 0;
+			padding-right: 0;
+			font-size: 16px;
+    }
+    &__scroll {
+		left: -80px;
+		}
+	}
+	
+	.future__text {
+		font-size: 16px;
+	}
+	.simplicity-item img {
+		object-fit: contain;
+	}
+	.offer {
+		padding-top: 40px;
+		padding-bottom: 80px;
+	}
+	.faq {
+		padding-top: 80px;
+		padding-bottom: 40px;
+		&-content {
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+	.literature {
+		padding-top: 40px;
+		padding-bottom: 40px;	
+	}
+	.literature-right {
+		padding: 0;
+		&__item {
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: 40px;
+		}
+	}
+	.contact {
+		display: block;
+	}
+	
+}
+
+@media screen and (max-width: 375px) {
+	.faq {
+		&-content {
+			&__title {
+				margin-bottom: 15px;
+			}
+			&__item {
+				width: 290px;
+				height: 290px;
+				padding: 40px 25px 30px;
+			}
+		}
+	}
+	.footer-menu {
+		display: block;
+		&__item {
+			margin-top: 10px;
+			margin-bottom: 10px;
+		}
+	}
+}

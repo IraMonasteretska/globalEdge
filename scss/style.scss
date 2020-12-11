@@ -1,4 +1,16 @@
 @import "fonts.scss";
 @import "main.scss";
 @import "three-busters-page.scss";
-@import "media.scss"; 
+@import "overall.scss";
+
+
+@import "components/header.scss";
+@import "components/first.scss";
+@import "components/_future.scss";
+@import "components/_offer.scss";
+@import "components/_rules.scss";
+@import "components/_faq.scss";
+@import "components/_literature.scss";
+@import "components/_footer.scss";
+
+@import "media.scss";

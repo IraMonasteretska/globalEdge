@@ -1,0 +1,14 @@
+.rules {
+    background: url('../../img/svg/rules.png') no-repeat center top / cover;
+    padding: 84px 0;
+    &__title {
+        text-align: center;
+        color: #757783;
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 125%;
+        span {
+            color: #1919C7;
+        }
+    }
+}

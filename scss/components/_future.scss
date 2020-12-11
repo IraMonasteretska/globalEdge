@@ -1,0 +1,137 @@
+.future {
+    width: 100%;
+    background: url('../img/future-bg.jpg') no-repeat center 425px;
+    background-size: auto;
+    padding-top: 70px;
+    padding-bottom: 182px;
+    &__text {
+        line-height: 170%;
+        text-align: center;
+        color: #757783;
+        max-width: 838px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+        span {
+            color: #1919C7;
+        }
+    }
+}
+
+.future-container {
+    position: relative;
+}
+
+.future-block {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 150px;
+}
+
+.future-left {
+    max-width: 47%;
+    margin-top: -75px;
+    &__text {
+        font-weight: 700;
+        font-size: 14px;
+        text-align: center;
+        margin-top: 4px;
+        line-height: 170%;
+        padding-left: 50px;
+        color: #AEAEEB;
+        span {
+            color: #FF8000;
+        }
+    }
+}
+
+.future-content {
+    max-width: 45%;
+    padding-top: 250px;
+    padding-left: 10px;
+    &__title {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 125%;
+        color: #0A0A0A;
+        padding-bottom: 45px;
+        span {
+            color: #1919C7;
+        }
+    }
+    &__text {
+        line-height: 170%;
+        margin-bottom: 26px;
+        color: #0A0A0A;
+        text-align: left;
+    }
+    &__bottom {
+        font-size: 18px;
+        line-height: 31px;
+        span {
+            color: #1919C7;
+        }
+    }
+}
+
+.simplicity {
+    padding-top: 175px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 53px;
+    position: relative;
+    &-item {
+        position: relative;
+        cursor: pointer;
+        width: 28%;
+        &__img img {
+            opacity: 1;
+            visibility: visible;
+            margin: 0 auto;
+            max-height: 275px;
+            width: auto;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+        }
+        &:hover {
+            padding-top: 123px;
+            .simplicity-item__img img {
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                top: 0;
+                opacity: 0;
+                visibility: hidden;
+                transition: opacity 0.3s ease, visibility 0.3s ease;
+            }
+            p {
+                height: auto;
+                opacity: 0.8;
+                visibility: visible;
+                transition: opacity 0.3s ease, visibility 0.3s ease;
+            }
+        }
+        
+        
+        &__title {
+            font-weight: 700;
+            max-width: 200px;
+            margin: -20px auto;
+            font-size: 28px;
+            line-height: 125%;
+            text-align: center;
+            color: #757783;
+            margin-bottom: 40px;
+            
+        }    
+    }
+    &-text {
+        opacity: 0;
+        visibility: hidden;
+        height: 0;
+        font-size: 18px;
+        line-height: 170%;
+        text-align: center;
+        color: #757783;
+        margin: 0 auto;
+        max-width: 330px;
+    }
+}

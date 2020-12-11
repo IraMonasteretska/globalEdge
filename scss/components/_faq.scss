@@ -1,0 +1,33 @@
+.faq {
+    padding-top: 148px;
+    padding-bottom: 146px;
+}
+
+.faq-content {
+    display: flex;
+    justify-content: space-between;
+		&__item {
+            border-radius: 50%;
+            background: linear-gradient(1.39deg, #B4B4FF -1.09%, #6969EF 94.5%);
+            width: 342px;
+            height: 342px;
+            padding: 67px 26px;
+		}
+
+		&__title {
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 125%;
+            text-align: center;
+            color: #FFFFFF;
+            margin-bottom: 24px;
+		}
+
+		&__text {
+            font-size: 16px;
+            line-height: 170%;
+            text-align: center;
+            color: #FFFFFF;
+            opacity: 0.6;
+		}
+}

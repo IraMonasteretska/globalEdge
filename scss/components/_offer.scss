@@ -1,0 +1,48 @@
+.offer {
+    padding-top: 80px;
+    padding-bottom: 180px;
+    &-container {
+        display: flex;
+        justify-content: space-between;
+    }
+    &-content {
+        position: relative;
+        padding-top: 96px;
+        max-width: 47%;
+        padding-left: 95px;
+        &__ask {
+            font-size: 18px;
+            line-height: 170%;
+            color: #0A0A0A;
+            margin-bottom: 15px;
+        }
+        &__text {
+            font-size: 18px;
+            line-height: 170%;
+            color: #757783;
+            margin-bottom: 49px;
+        }
+        &__img {
+            width: 196px;
+        }
+    }
+    &__title {
+        text-align: left;
+        
+        span {
+            color: #1919C7;
+        }
+    }
+    &__scroll {
+        height: 18px;
+        top: 180px;
+        left: -50px;
+        &::after {
+            width: 74px;
+            right: -46px;
+        }
+    }
+    &-picture {
+        max-width: 43%;
+    }
+}
