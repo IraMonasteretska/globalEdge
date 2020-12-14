@@ -1,3 +1,9 @@
+@media screen and (max-width: 1600px) {
+	.why__img {
+		margin-right: 0;
+	}
+}
+
 @media screen and (max-width: 1440px) {
 	.future-content {
 		padding-top: 90px;
@@ -279,6 +285,26 @@
 		max-width: 420px;
 		padding-left: 70px;
 	}
+	.why {
+		padding-top: 100px;
+		&-container {
+			display: block;
+		}
+		&__img {
+			margin-top: 0;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		&-left {
+			padding-left: 30px;	
+			padding-right: 30px;
+			max-width: 100%;
+			margin-bottom: 50px;
+		}
+		&__title {
+			text-align: center;
+		}
+	}
 }
 
 @media screen and (max-width: 992px) {
@@ -422,6 +448,18 @@
 	.contact {
 		display: flex;
 	}
+	.edge {
+		&-bottom {
+			background-position: center 30px;
+			background-size: 35%;
+			padding-top: 45%;
+			padding-bottom: 40px;
+			&__text {
+				padding-left: 0;
+				font-size: 22px;
+			}
+		}
+	}
 }
 
 
@@ -451,6 +489,17 @@
 	.scroll {
 		display: none;
 	}
+	.why {
+		padding-top: 50px;
+		&-left	{
+			padding-left: 0;
+			padding-right: 0;
+		}
+		&__img {
+			max-width: 350px;
+		}
+	}
+	
 }
 
 @media (max-width: 718px) {
@@ -697,7 +746,38 @@
 	.contact {
 		display: block;
 	}
-	
+	.why {
+		padding-bottom: 0;
+		&__title {
+			font-size: 22px;
+		}
+		&__text {
+			font-size: 14px;
+		}
+	}
+	.edge {
+		padding-top: 80px;
+		&__text {
+			font-size: 14px;
+			margin-bottom: 40px;
+		}
+		&-bottom {
+			&__text {
+				font-size: 18px;
+			}
+		}
+	}
+	.business {
+		&__title {
+			font-size: 24px;
+		}
+		&__text {
+			font-size: 14px;
+		}
+		&-bottom {
+			padding-top: 20px;
+		}
+	}
 }
 
 @media screen and (max-width: 375px) {

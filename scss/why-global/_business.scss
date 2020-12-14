@@ -1,0 +1,29 @@
+.business {
+    padding-top: 16px;
+    padding-bottom: 140px;
+    &__title {
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 170%;
+        text-align: center;
+        color: #0A0A0A;
+        margin-bottom: 40px;
+        span {
+           color:#1919C7;
+        }
+    }
+    &__text {
+        font-size: 18px;
+        line-height: 170%;
+        text-align: center;
+        color: #757783;
+        max-width: 838px;
+        margin: 0 auto 34px;
+        span {
+            color:#1919C7;
+        }
+    }
+    &-bottom {
+        padding-top: 55px;
+    }
+}

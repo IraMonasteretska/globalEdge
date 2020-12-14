@@ -38,7 +38,7 @@
         line-height: 170%;
         padding-left: 50px;
         color: #AEAEEB;
-        span {
+        a {
             color: #FF8000;
         }
     }
@@ -83,6 +83,7 @@
         position: relative;
         cursor: pointer;
         width: 28%;
+        min-height: 365px;
         &__img img {
             opacity: 1;
             visibility: visible;
@@ -92,7 +93,6 @@
             transition: opacity 0.3s ease, visibility 0.3s ease;
         }
         &:hover {
-            padding-top: 123px;
             .simplicity-item__img img {
                 position: absolute;
                 left: 50%;
@@ -102,16 +102,25 @@
                 visibility: hidden;
                 transition: opacity 0.3s ease, visibility 0.3s ease;
             }
-            p {
-                height: auto;
+            .simplicity-item__title {
+                transform: translateX(-50%) translateY(120px);
+                transition: transform 0.5s ease;
+            }
+            .simplicity-text {
+                top: 178px;
                 opacity: 0.8;
                 visibility: visible;
-                transition: opacity 0.3s ease, visibility 0.3s ease;
+                transition: opacity 2s ease, visibility 2s ease;
+                z-index: 10;
             }
         }
         
         
         &__title {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%) translateY(274px);
             font-weight: 700;
             max-width: 200px;
             margin: -20px auto;
@@ -124,14 +133,17 @@
         }    
     }
     &-text {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
         opacity: 0;
         visibility: hidden;
-        height: 0;
         font-size: 18px;
         line-height: 170%;
         text-align: center;
         color: #757783;
         margin: 0 auto;
         max-width: 330px;
+        width: 100%;
     }
 }
