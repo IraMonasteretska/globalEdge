@@ -305,6 +305,24 @@
 			text-align: center;
 		}
 	}
+	.cdwan {
+		padding-top: 0;
+		padding-bottom: 50px;
+		&-container {
+			display: block;
+		}
+		&__item {
+			padding-top: 100px;
+			max-width: 600px;
+			margin: 0 auto 40px;
+			width: 100%;
+			&:hover {
+				.cdwan__title {
+					top: 20px;
+				}
+			}
+		}
+	}
 }
 
 @media screen and (max-width: 992px) {
@@ -352,11 +370,8 @@
 		padding-top: 0;
 		display: block;
 		&-item {
-			margin-bottom: 40px;
+			padding-bottom: 0;
 			width: 100%;
-			&__img img {
-				max-height: 230px;
-			}
 			&__title {
 				max-width: 100%;
 			}
@@ -776,6 +791,22 @@
 		}
 		&-bottom {
 			padding-top: 20px;
+		}
+	}
+	.cdwan {
+		padding-bottom: 60px;
+		&__title {
+			font-size: 21px;	
+		}
+		&__text {
+			font-size: 14px;
+		}
+	}
+	.expect {
+		padding-top: 60px;
+		padding-bottom: 60px;
+		&__title {
+			font-size: 22px;
 		}
 	}
 }

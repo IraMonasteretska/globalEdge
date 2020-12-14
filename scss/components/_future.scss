@@ -74,44 +74,46 @@
 }
 
 .simplicity {
-    padding-top: 175px;
+    padding-top: 168px;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 53px;
     position: relative;
     &-item {
         position: relative;
         cursor: pointer;
         width: 28%;
-        min-height: 365px;
-        &__img img {
+        display: flex;
+        flex-direction: column;
+        padding-top: 186px;
+        padding-bottom: 39px;
+        &__img {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
             opacity: 1;
             visibility: visible;
             margin: 0 auto;
-            max-height: 275px;
-            width: auto;
             transition: opacity 0.3s ease, visibility 0.3s ease;
+            img {
+                max-width: 300px;
+            }
         }
         &:hover {
-            .simplicity-item__img img {
-                position: absolute;
-                left: 50%;
-                transform: translateX(-50%);
+            .simplicity-item__img img {  
                 top: 0;
                 opacity: 0;
                 visibility: hidden;
                 transition: opacity 0.3s ease, visibility 0.3s ease;
             }
             .simplicity-item__title {
-                transform: translateX(-50%) translateY(120px);
+                transform: translateX(-50%) translateY(110px);
                 transition: transform 0.5s ease;
             }
             .simplicity-text {
-                top: 178px;
                 opacity: 0.8;
                 visibility: visible;
                 transition: opacity 2s ease, visibility 2s ease;
-                z-index: 10;
             }
         }
         
@@ -120,29 +122,29 @@
             position: absolute;
             top: 0;
             left: 50%;
-            transform: translateX(-50%) translateY(274px);
+            transform: translateX(-50%) translateY(260px);
             font-weight: 700;
             max-width: 200px;
-            margin: -20px auto;
+            margin-left: auto;
+            margin-right: auto;
             font-size: 28px;
             line-height: 125%;
             text-align: center;
-            color: #757783;
-            margin-bottom: 40px;
-            
+            color: #757783;            
         }    
     }
     &-text {
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
+
         opacity: 0;
         visibility: hidden;
         font-size: 18px;
         line-height: 170%;
         text-align: center;
         color: #757783;
-        margin: 0 auto;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+        margin-bottom: 50px;
         max-width: 330px;
         width: 100%;
     }

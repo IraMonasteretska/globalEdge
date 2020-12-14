@@ -1,0 +1,22 @@
+.expect {
+    padding-top: 85px;
+    padding-bottom: 85px;
+    background: url('../img/expect.png') no-repeat center top / cover;
+    &-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 28px;
+        line-height: 125%;    
+        color: #757783;
+        height: 35px;
+        span {
+            color: #1919C7;
+        }
+    }
+}
