@@ -1,0 +1,40 @@
+.sdwan-bg {
+    background: url('../img/sdwan-bg.png') no-repeat center top / cover;
+}
+
+.sdwan-first {  
+    padding-bottom: 50px;
+    position: relative;
+
+    &__main {
+        background: url('../img/sdwan-1.png') no-repeat;
+        background-position: 107% 32px;
+        padding-left: 8.5%;
+        padding-top: 71px;
+        padding-bottom: 200px;
+    }
+    
+    &__title {
+        font-weight: bold;
+        font-size: 64px;
+        line-height: 125%;
+        color: #0A0A0A;
+        margin-bottom: 44px;
+        span {
+            color: #1919C7;
+        }
+    }
+
+    &__text {
+        font-size: 18px;
+        line-height: 190%;
+        color: #757783;
+        max-width: 51%;
+    }
+
+    &__scroll {
+        top: 289px;
+        width: 264px;
+        left: -94px;
+    }
+}

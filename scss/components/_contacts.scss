@@ -1,0 +1,91 @@
+.contacts {
+    &-container {            
+        background: url('../img/svg/first-map.svg') no-repeat right bottom;
+        background-size: 50%;           
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 125%;
+        color: #1919C7;
+        margin-bottom: 40px;
+    }
+
+    &__text {
+        font-size: 18px;
+        line-height: 170%;
+        color: #757783;
+        margin-bottom: 46px;
+    }
+
+    &__block {
+        padding-top: 75px;
+        padding-bottom: 144px;
+        max-width: 47%;
+        padding-left: 86px;
+    }
+}
+
+
+
+.form {  
+    &__input {
+        width: 100%;
+        font-size: 18px;
+        line-height: 22px;
+        height: 56px;
+        color: #A5AAE0;
+        border: 1px solid #B7C0EB;
+        border-radius: 8px;
+        margin-bottom: 23px;
+        padding-left: 32px;
+        &--phone {
+            max-width: 213px;
+            margin-left: 18px;
+        }
+    }
+
+    &__group {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__btn {
+        margin-top: 18px;
+        position: relative;
+        width: 218px;
+        &--input {
+            border: none;
+            outline: none;
+            justify-content: left;
+            padding-left: 32px;
+        }
+        &::after {
+            content: '';
+            display: block;
+            background: url('../img/svg/btn.svg') no-repeat center center;
+            background-color: #FFBF80;
+            position: absolute;  
+            right: 0;
+            top: 0; 
+            width: 56px;
+            height: 100%; 
+            border-top-right-radius: 8px;
+            border-bottom-right-radius: 8px; 
+            transition: background-color 0.3s ease;   
+        }
+
+        &:hover::after {
+            background: url('../img/svg/btn.svg') no-repeat center center;
+            background-color: #FF8000;
+            transition: background-color 0.3s ease;
+        }
+    }
+}
+
+.contacts-footer {
+    .footer__btn, .footer__arrow {
+        display: none;
+    }
+}

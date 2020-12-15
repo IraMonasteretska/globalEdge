@@ -3,6 +3,7 @@
     padding-top: 133px;
 
     &__top {
+        position: relative;
         padding-left: 105px;
         background: url('../img/svg/tech-talk-1.svg') no-repeat right center;
         background-position-x: 92%;
@@ -35,6 +36,7 @@
     }
 
     &__second {
+        position: relative;
         background: url('../img/svg/tech-talk-2.svg') no-repeat left center;
         background-position: 12%;
         padding-left: 35.5%;
@@ -46,6 +48,7 @@
     }
 
     &__third {
+        position: relative;
         background: url('../img/svg/tech-talk-3.svg') no-repeat right center;
         padding-top: 75px;
         padding-bottom: 75px;
@@ -54,6 +57,7 @@
     }
 
     &__four {
+        position: relative;
         background: url('../img/svg/tech-talk-4.svg') no-repeat left center;
         background-position: 12% 10px;
         padding-left: 35.5%;

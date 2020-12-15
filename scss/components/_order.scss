@@ -1,0 +1,48 @@
+.order { 
+    &-bg {
+        background: url('../img/svg/order-bg.svg') no-repeat center top / cover;
+    }
+    &-container { 
+        position: relative;
+        padding-top: 230px;
+        padding-bottom: 220px;
+        background: url('../img/order.png') no-repeat;
+        background-position-y: center;
+        background-position-x: 100%;
+    }
+
+    &__content {   
+        position: relative;   
+        padding-left: 89px;
+        max-width: 45%;
+    }
+
+    &__title {
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 125%;
+        color: #0A0A0A;
+        margin-bottom: 40px;
+        span {
+            color: #1919C7;
+        }
+    }
+
+    &__text {
+        font-size: 18px;
+        line-height: 170%;
+        color: #757783;
+        margin-bottom: 50px;
+    }
+
+    &__btn {
+        margin-right: auto;
+        margin-left: 0;
+    }
+
+    &__scroll {
+        top: 120px;
+        left: -99px;
+        width: 245px;
+    }
+}

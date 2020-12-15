@@ -1,0 +1,74 @@
+.prehistory {
+    &-wrapper {
+        padding-top: 113px;
+        padding-left: 8.5%;
+    }
+
+    &-block {
+        padding-bottom: 56px;
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 125%;
+        color: #1919C7;
+        margin-bottom: 56px;
+    }
+
+    &__list {
+        max-width: 86%;
+    }
+
+    &__item {
+        font-size: 18px;
+        line-height: 190%;
+        color: #757783;
+        position: relative;
+        padding-left: 47px;
+        margin-bottom: 44px;
+        &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            background: url('../img/svg/prehistory-text.svg') no-repeat left top;
+            left: 0;
+            top: 10px;
+            width: 11px;
+            height: 11px;
+        }
+    }
+
+    &__choose {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        max-height: 270px;
+        max-width: 78%;
+        .prehistory__item {
+            margin-bottom: 34px;
+            max-height: 300px;
+        }
+    }
+
+    &__scroll {
+        top: 232px;
+        width: 229px;
+        left: -76px;
+    }
+
+    &__subtitle {
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 125%;
+        color: #1919C7;
+        margin-bottom: 55px;
+    }
+
+    &__text {
+        font-size: 18px;
+        line-height: 190%;
+        color: #757783;
+        max-width: 86%;
+        margin-bottom: 44px;
+    }
+}

@@ -1,6 +1,9 @@
-.business {
+.business {   
     padding-top: 16px;
     padding-bottom: 140px;
+    &-container {
+        position: relative;
+    }
     &__title {
         font-weight: 700;
         font-size: 28px;
