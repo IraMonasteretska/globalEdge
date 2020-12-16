@@ -9,13 +9,54 @@
 .header {
     padding-top: 20px;
     padding-bottom: 20px;
-    position: relative;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 99;
 
     &__nav {
         display: flex;
         justify-content: space-between;
         align-items: center;
         z-index: 10;
+    }
+
+    &.nav-active {
+        padding-top: 0;
+        .header-container {
+            padding-left: 0;
+            padding-right: 0;
+        }
+        .menu {
+            margin-bottom: 90px;
+        }
+        .header__menu {
+            background: #2C2C95 url('../img/svg/logo-mobile.svg') no-repeat center 50px;
+            position: relative;
+            transform: translateY(0);
+            transition: transform 0.3s ease;
+            height: 100vh;
+            overflow: scroll;
+        }
+        .header__logo {
+            display: none;
+        }
+        .header__nav {
+            display: block;
+        }
+        .header__btn {
+            display: flex;
+            margin-right: auto;
+            margin-left: auto;
+            border: 1px solid #fff;
+            color: #fff;
+            z-index: 15;
+
+            svg path {
+                stroke: #fff;
+            }
+        }
     }
 
     &__btn {
@@ -26,7 +67,7 @@
         border-radius: 8px;
         margin-bottom: 5px;
         padding: 17px 0;
-        width: 218px;
+        min-width: 218px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -53,16 +94,25 @@
     }
 
     &__menu {
-        margin-left: auto;
-        margin-right: 62px;
+        max-width: 839px;
+        width: 100%;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 }
+
+
 
 .menu {   
     display: flex;
     justify-content: space-between;
     max-width: 560px;
     width: 100%;
+    margin-left: auto;
+    margin-right: 62px;
     
     &-burger {    
         background: url('../img/svg/menu-burger-black.svg') no-repeat center center; 
@@ -75,13 +125,17 @@
             height: 30px; 
         }
     }
+
+    &__btn {
+        display: none;
+    }
 }
 
 .menu-item__svg {
     margin-left: 15px;
 }
 
-.menu-item {
+.page-item {
     padding-bottom: 5px;
     &:last-child a {
         color: #ff8000;

@@ -118,11 +118,13 @@ select {
     height: 56px;
     width: 218px;
     margin: 0 auto;
+    
 
     &:hover::after {
         background: url('../img/svg/btn.svg') no-repeat center center;
         background-color: #FF8000;
         transition: background-color 0.3s ease;
+        
     }
 
     &::after {
@@ -159,6 +161,10 @@ select {
     }
 }
 
+body.lock {
+    overflow: hidden;
+}
+
 
 .buble {
     position: absolute;
@@ -178,6 +184,13 @@ select {
     animation: 5.5s linear 1s infinite alternate bubel_anim2;
 }
 
+.buble-31 {
+    width: 31px;
+    top: 5%;
+    right: 10%;
+    animation: 5.5s linear 1s infinite alternate bubel_anim2;
+}
+
 .buble-16 {
     width: 16px;
     top: 11%;
@@ -192,6 +205,13 @@ select {
     animation: 5.5s linear 1s infinite alternate bubel_anim2;
 }
 
+.buble-58 {
+    width: 58px;
+    bottom: 10%;
+    left: 2%;
+    animation: 5.5s linear 1s infinite alternate bubel_anim1;
+}
+
 .buble-60 {
     width: 60px;
     bottom: 50%;
@@ -199,12 +219,7 @@ select {
     animation: 5.5s linear 1s infinite alternate bubel_anim2;
 }
 
-.buble-31 {
-    width: 31px;
-    top: 5%;
-    right: 10%;
-    animation: 5.5s linear 1s infinite alternate bubel_anim2;
-}
+
 
 .buble-38 {
     width: 38px;
