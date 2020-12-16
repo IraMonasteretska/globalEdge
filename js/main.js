@@ -6,7 +6,7 @@ $(document).ready(function(){
         
     });
 
-    if (top.location.pathname === '/ten-benefits.html'){
+    if (document.querySelector("#typing")) {
         $("#typing").typed({
             strings: [
             " Having the  <span class='benefits__typing-span' >  “perfect” SD-WAN for your   business </span> doesn’t have to be complicated or costly ",
@@ -18,10 +18,12 @@ $(document).ready(function(){
             loopCount: 500,
             contentType: "html",
         });
-    }
+    };
 
-    if (top.location.pathname === '/myth-busters.html')
-        {
+        
+    
+
+    if (document.querySelector("#myth-typed")) {
             $("#myth-typed").typed({
                 strings: [
                 "Ask for <span> a demo </span> – we will show you.",
@@ -35,8 +37,7 @@ $(document).ready(function(){
             });
         }  
 
-    if (top.location.pathname === '/why-global.html')
-        {
+        if (document.querySelector("#why-typed")) {
             $("#why-typed").typed({
                 strings: [
                 "Expect more. <span>Connect different.</span>",
