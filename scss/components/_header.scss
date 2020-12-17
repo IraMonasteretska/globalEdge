@@ -35,7 +35,7 @@
             background: #2C2C95 url('../img/svg/logo-mobile.svg') no-repeat center 50px;
             position: relative;
             transform: translateY(0);
-            transition: transform 0.3s ease;
+            transition: transform 0.5s ease;
             height: 100vh;
             overflow: scroll;
         }
@@ -94,6 +94,7 @@
     }
 
     &__menu {
+        background-color: transparent;
         max-width: 839px;
         width: 100%;
         padding-top: 5px;
