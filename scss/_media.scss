@@ -9,6 +9,10 @@
 		padding-top: 90px;
 	}
 
+	.sdwan-first__main {
+		background-size: 40%;
+	}
+
 	.future-left {
 		margin-top: 0;
 	}
@@ -364,6 +368,10 @@
 				}
 			}
 		}
+
+		&__text {
+			min-height: 180px;
+		}
 	}
 	.prehistory {
 		&__list {
@@ -372,6 +380,7 @@
 
 		&__text {
 			max-width: 100%;
+			
 		}
 	}
 
@@ -583,6 +592,9 @@
 			max-width: 550px;
 			display: block;
 		}
+		&-menu {
+			margin-bottom: 20px;
+		}
 	}
 
 	.contact {
@@ -591,9 +603,9 @@
 
 	.edge {
 		&-bottom {
-			background-position: center 30px;
+			background-position: center 80px;
 			background-size: 35%;
-			padding-top: 45%;
+			padding-top: 50%;
 			padding-bottom: 40px;
 
 			&__text {
@@ -707,7 +719,18 @@
 	}
 
 	.footer-menu {
-		margin-bottom: 10px;
+		margin-bottom: 15px;
+		&__item {
+			margin-bottom: 15px;
+		}
+	}
+
+	.contact__text {
+		margin-bottom: 15px;
+	}
+
+	.contact__link {
+		margin-bottom: 15px;
 	}
 
 	.why {
@@ -749,22 +772,37 @@
 			padding-top: 50px;
 		}
 	}
+		
 	.five-benefits {
 		&__title {
 			font-size: 32px;
+			margin-bottom: 0;
+
 		}
 		&__item {
+			margin-bottom: 30px;
+			padding-top: 40%;
 			&--title {
-				font-size: 24px;	
+				font-size: 24px;
+				max-width: 200px;	
+			}
+			&:hover {
+				.five-benefits__item--title {
+					transform: translateX(-50%) translateY(-140px);
+				}
 			}
 		}
 		&__text {
 			font-size: 14px;
 		}
+		&__img {
+			max-height: 50%;
+		}
 		&__img img{
 			max-width: 80%;
 			margin-left: auto;
 			margin-right: auto;
+			
 		}
 	}
 	
@@ -792,6 +830,7 @@
 	.myth-busters {
 		padding-bottom: 60px;
 	}
+	
 }
 
 @media (max-width: 718px) {
@@ -1085,6 +1124,9 @@
 		}
 
 		&-bottom {
+			background-position: center 50px;
+			background-size: 50%;
+			padding-top: 70%;
 			&__text {
 				font-size: 18px;
 			}
@@ -1092,6 +1134,7 @@
 	}
 
 	.business {
+		padding-bottom: 30px;
 		&__title {
 			font-size: 24px;
 		}
@@ -1106,7 +1149,7 @@
 	}
 
 	.cdwan {
-		padding-bottom: 60px;
+		padding-bottom: 20px;
 
 		&__title {
 			font-size: 21px;
@@ -1114,6 +1157,14 @@
 
 		&__text {
 			font-size: 14px;
+		}
+
+		&__img {
+			width: 100%;
+			img {
+				margin-left: auto;
+				margin-right: auto;
+			}
 		}
 	}
 
@@ -1127,6 +1178,10 @@
 	}
 
 	.typed__title {
+		font-size: 20px;
+	}
+
+	.expect__title {
 		font-size: 20px;
 	}
 
@@ -1160,7 +1215,8 @@
 		}
 		&__main {
 			background-position: 50% 90%;
-			padding-bottom: 185px;
+			padding-bottom: 255px;
+			background-size: 60%;
 		}
 	}
 	.prehistory {
@@ -1191,6 +1247,20 @@
 			margin-left: auto;
 			margin-right: auto;
 			margin-bottom: 30px;
+			padding-top: 40%;
+			&:hover {
+				.five-benefits__item--title {
+					transform: translateX(-50%) translateY(-130px);
+				}
+			}
+			&--title {
+				max-width: 200px;
+				top: 220px;
+			}
+		}
+
+		&__img {
+			max-height: 50%;
 		}
 	}
 	.contacts {
@@ -1208,10 +1278,11 @@
 		}
 	}
 	.order {
+		padding-bottom: 0;
 		&-container {
 			background-position: bottom;
-			background-size: 60%;
-			padding-bottom: 47%;
+			background-size: 85%;
+			padding-bottom: 70%;
 		}
 		&__title {
 			font-size: 32px;
@@ -1220,6 +1291,12 @@
 		&__text {
 			font-size: 16px;
 		}
+	}
+}
+
+@media screen and (max-width: 430px) {
+	.five-benefits__item:hover .five-benefits__item--title {
+		transform: translateX(-50%) translateY(-140px);
 	}
 }
 
@@ -1241,13 +1318,14 @@
 	.footer-menu {
 		display: block;
 
-		&__item {
-			margin-top: 10px;
-			margin-bottom: 10px;
-		}
 	}
 	.form__input {
 		font-size: 14px;
 	}
-
+	.sdwan-first__main {
+		background-size: 75%;
+	}
+	.five-benefits__item:hover .five-benefits__item--title {
+		transform: translateX(-50%) translateY(-170px);
+	}
 }
