@@ -72,13 +72,13 @@
 		margin-right: 0;
 		z-index: 10;
 		
-		.page-item {
+		.menu-item {
 			&:last-child a {
 				color: #ff8000;
 			}
 		}
 
-		.page-item a {
+		.menu-item a {
 			color: #fff;
 			width: max-content;
 			margin: 0 auto;
